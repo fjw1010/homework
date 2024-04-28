@@ -36,9 +36,9 @@
 
 body {
     background-color: #272829;
-
+    font-family: 'Pretendard-Regular';
     margin: 0px auto;
-    width: 1200px;
+    width: 1400px;
     
 }
 /* body의 스크롤 변경 */
@@ -53,9 +53,6 @@ body::-webkit-scrollbar-thumb {
 
 /*=============================== 구 분 선 ===============================*/
 
-.titleHead{
-    background-color: green
-}
 .titlesub > header {
     background-color: #61677A;
     /* 헤더의 배경 영역*/
@@ -93,33 +90,50 @@ form {
     /* 폰트 영역 */
     font-family: 'omyu_pretty';
     font-size: 20px;
-    
+    /**/
     border-radius: 10px;
-    margin: 10px 70px;
-    padding: 20px;
-    
-    display: flex;
+    margin: 20px;
+    padding: 30px;
+
+    display:flex;
     flex-direction: column;
     overflow: auto;
     float: left;
+   
 }
 .boxlist > p {
-    line-height: 150%;
+    line-height: ;
 }
+/* 스크롤 바*/
 .boxlist::-webkit-scrollbar {
-    width: 20px;
+    width: 13px;
 }
 .boxlist::-webkit-scrollbar-thumb {
     height: 30%;
-    background-color: #D8D9DA;
+    background-color: #97DECE;
     border-radius: 10px;
 }
 
+/* 이미지 박스 */
 .imgBox {
     border: 2px solid rgba(124, 95, 95, 0.096);
     border-radius: 10px;
 }
 
+.cardTitle {
+    background-color: green;
+    font-size: 25px;
+}
+.cardSubtitle {
+    background-color: red;
+    font-size: 20px;
+}
+.movies {
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    background-color: green;
+}
 
 
 
