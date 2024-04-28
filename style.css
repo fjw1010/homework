@@ -5,8 +5,20 @@
     font-weight: 400;
     font-style: normal;
 }
-
-
+/* 출처 : 눈누 사이트 경기천년바탕 */
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 출처 : 눈누 사이트 오뮤 다예쁨체 */
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -21,15 +33,31 @@
 
 
 /*=============================== 구 분 선 ===============================*/
+
 body {
-    
-    background-color: rgb(161, 54, 54);
-    
+    background-color: #272829;
+
+    margin: 0px auto;
+    width: 1200px;
     
 }
+/* body의 스크롤 변경 */
+body::-webkit-scrollbar {
+    width: 20px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 20%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
 
+/*=============================== 구 분 선 ===============================*/
+
+.titleHead{
+    background-color: green
+}
 .titlesub > header {
-    background-color: blue;
+    background-color: #61677A;
     /* 헤더의 배경 영역*/
     background-image: url();
     background-position: center;
@@ -38,15 +66,16 @@ body {
     height: 150px;
     color: white;
     /* 헤더의 폰트 영역 */
-    font-family: 'Pretendard-Regular';
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 form {
-    background-color: green;
+    background-color: #D8D9DA;
+    color: black;
     height: 100px;
+    border-bottom: 2px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,27 +84,40 @@ form {
 
 
 
-.boxlist {
-    box-shadow: 0 3px 6px rgba(0, 3, 6);
-    background-color: rgb(255, 210, 210);
-    width: 300px;
-    height: 600px;
+.popularMovie div {
+    /* */
+    background-color: #FFF6E0;
+    width: 200px;
+    height: 400px;
 
+    /* 폰트 영역 */
+    font-family: 'omyu_pretty';
+    font-size: 20px;
     
     border-radius: 10px;
-    margin-left: 30px;
+    margin: 10px 70px;
     padding: 20px;
-    
     
     display: flex;
     flex-direction: column;
-    
     overflow: auto;
-    float:left
+    float: left;
 }
+.boxlist > p {
+    line-height: 150%;
+}
+.boxlist::-webkit-scrollbar {
+    width: 20px;
+}
+.boxlist::-webkit-scrollbar-thumb {
+    height: 30%;
+    background-color: #D8D9DA;
+    border-radius: 10px;
+}
+
 .imgBox {
-    border: 2px solid rgb(124, 95, 95);
-    border-radius: 5px;
+    border: 2px solid rgba(124, 95, 95, 0.096);
+    border-radius: 10px;
 }
 
 
