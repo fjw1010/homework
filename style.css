@@ -1,0 +1,83 @@
+/* 출처 : 눈누 사이트 프리텐 다드 글꼴 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================== 구 분 선 ===============================*/
+body {
+    
+    background-color: rgb(161, 54, 54);
+    
+    
+}
+
+.titlesub > header {
+    background-color: blue;
+    /* 헤더의 배경 영역*/
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    
+    height: 150px;
+    color: white;
+    /* 헤더의 폰트 영역 */
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    background-color: green;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.boxlist {
+    box-shadow: 0 3px 6px rgba(0, 3, 6);
+    background-color: rgb(255, 210, 210);
+    width: 300px;
+    height: 600px;
+
+    
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 20px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    overflow: auto;
+    float:left
+}
+.imgBox {
+    border: 2px solid rgb(124, 95, 95);
+    border-radius: 5px;
+}
+
+
+
+
