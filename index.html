@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내배캠 최고 평점 영화 콜렉션
-    </title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="./movie.js" type="module"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화 검색</title>
+    <link rel="stylesheet" href="./style/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./style/ui.css" type="text/css" />
+    <script type="module" src="./src/movie.js"></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        
+      <figure>
+        <img src="./assets/logo.png" width="100" alt="고양이 로고" />
+      </figure>
+      <form id="searchForm">
+        <input
+          class="searchBox"
+          name="searcValus"
+          type="text"
+          id="searcInput"
+        />
+        <button class="searchBtn">검색</button>
+      </form>
     </header>
-    <form>
-        <input />
-    </form>
-    <ul class="caedList"></ul>
-</body>
+    <main>
+      <section id="movieList" class="popularMovie"></section>
+    </main>
+  </body>
 </html>
