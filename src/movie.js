@@ -1,11 +1,4 @@
-export const options = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NTBlOWYzZWM4MDE2MDNjNDU0ZGE2OTI3YzE2NzgyOCIsInN1YiI6IjY2MjlmY2Y2NTBmN2NhMDBiNGM4NzRkMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZL5HraHPiqZGsswyXAE56sifz70OMVx3b1YwgO__5B8",
-  },
-};
+import { options } from "./options.js";
 
 fetch(
   "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1",
@@ -18,12 +11,13 @@ fetch(
       console.log(element);
 
       const movieCard = document.createElement("div");
+      movieCard.idName = "box";
       movieCard.className = "boxlist";
       movieCard.innerHTML = `
-        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2${element.poster_path}" alt="영화 포스터" />
+        <img class="moviePoster" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2${element.poster_path}" alt="영화 포스터"" />
         <h1 class="movieTitle">${element.title}</h1>
-        <p>${element.overview}</p>
-        <p>Rating : ${element.popularity}</p>
+        <p class="movieDescription">${element.overview}</p>
+        <p class="movieRating">Rating : ${element.popularity}</p>
         `;
       document.getElementById("movieList").appendChild(movieCard);
     });
