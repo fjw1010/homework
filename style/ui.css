@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   height: 20%;
-  background: rgb(133, 78, 78);
+  background: black;
   border-radius: 10px;
 }
 /* 헤더 영역 */
@@ -37,17 +37,81 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin-bottom: 20px;
 }
-/* 헤더에 form 영역*/
+/* 헤더에 form 영역(id 값)*/
 #searchForm {
-  background-color: red;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+/*검색창 (id 값)*/
+#searcInput {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+}
+/*버튼 (id 값)*/
+#searchBtn {
+  padding: 8px 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
 }
 /*========================== 구 분 선 ==========================*/
-/* 영화 리스트 영역 */
-.popularMovie {
-  margin-right: 20px;
+/*영화 리스트 4개씩 나열*/
+#movieList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+/*영화 리스트들을 담은 전체 div*/
+.boxlist {
+  font-family: "Pretendard-Regular";
+  width: 300px;
+  height: 600px;
+  background-color: #f0ebe3;
+
+  margin: 30px 30px 0px 100px;
+  border-radius: 20px;
+
+  overflow: auto;
+}
+/*리스트를 담은 전체 div의 스크롤바*/
+.boxlist::-webkit-scrollbar {
+  width: 8px;
+}
+.boxlist::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+}
+.boxlist::-webkit-scrollbar-track {
+  background-color: white;
+}
+/*영화리스트 이미지 */
+.moviePoster {
+  width: 100%;
+  height: auto;
+}
+/*타이틀*/
+.movieTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/*내용*/
+.movieDescription {
+  font-size: 14px;
+  line-height: 15px;
+}
+/*별점*/
+.movieRating {
+  font-size: 15px;
+  margin: 20px 20px;
+  text-align: center;
 }
